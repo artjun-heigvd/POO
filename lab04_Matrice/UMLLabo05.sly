@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Labo05">
+    <inheritance id="6804">
+      <child>6748</child>
+      <parent>6702</parent>
+    </inheritance>
+    <inheritance id="6805">
+      <child>6792</child>
+      <parent>6702</parent>
+    </inheritance>
+    <inheritance id="6806">
+      <child>6798</child>
+      <parent>6702</parent>
+    </inheritance>
+    <entity entityType="CLASS" id="5998" isAbstract="false" name="Matrix" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="m" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="n" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="modValue" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="matrix" type="int[][]" visibility="PRIVATE"/>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="m" type="int"/>
+        <variable const="false" name="n" type="int"/>
+        <variable const="false" name="modValue" type="int"/>
+      </method>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="matrix" type="int[][]"/>
+        <variable const="false" name="modValue" type="int"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="toString" returnType="String" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="matrixOp" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="b" type="Matrix"/>
+        <variable const="false" name="operation" type="Operation"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="add" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="b" type="Matrix"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="sub" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="b" type="Matrix"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="mult" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="b" type="Matrix"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="verifyMod" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="b" type="Matrix"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="arrayCheck" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="a" type="int[][]"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="modPos" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="mod" type="int"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="verifyDim" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="m" type="int"/>
+        <variable const="false" name="n" type="int"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="6702" isAbstract="true" name="Operation" visibility="PUBLIC">
+      <method isAbstract="true" isStatic="false" name="operate" returnType="int" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="opA" type="int"/>
+        <variable const="false" name="opB" type="int"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="6748" isAbstract="false" name="Addition" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="operate" returnType="int" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="opA" type="int"/>
+        <variable const="false" name="opB" type="int"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="6792" isAbstract="false" name="Subtraction" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="operate" returnType="int" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="opA" type="int"/>
+        <variable const="false" name="opB" type="int"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="6798" isAbstract="false" name="Multiplication" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="operate" returnType="int" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="opA" type="int"/>
+        <variable const="false" name="opB" type="int"/>
+      </method>
+    </entity>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <relationView color="-12566464" relationId="6806">
+      <line>
+        <point>
+          <x>661</x>
+          <y>521</y>
+        </point>
+        <point>
+          <x>661</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>411</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>411</x>
+          <y>421</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="6805">
+      <line>
+        <point>
+          <x>411</x>
+          <y>521</y>
+        </point>
+        <point>
+          <x>411</x>
+          <y>421</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="6804">
+      <line>
+        <point>
+          <x>151</x>
+          <y>521</y>
+        </point>
+        <point>
+          <x>151</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>411</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>411</x>
+          <y>421</y>
+        </point>
+      </line>
+    </relationView>
+    <componentView color="-2079" componentID="6798" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>560</x>
+        <y>520</y>
+        <w>200</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="6792" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>310</x>
+        <y>520</y>
+        <w>200</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="6748" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>50</x>
+        <y>520</y>
+        <w>210</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="6702" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>300</x>
+        <y>350</y>
+        <w>220</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5998" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>260</x>
+        <y>30</y>
+        <w>290</w>
+        <h>280</h>
+      </geometry>
+    </componentView>
+    <note color="-2079" content="CI : The modulo of a matrix cannot be &lt;= 0">
+      <noteGeometry>
+        <x>110</x>
+        <y>100</y>
+        <w>100</w>
+        <h>75</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="5998">
+        <point>
+          <x>211</x>
+          <y>141</y>
+        </point>
+        <point>
+          <x>261</x>
+          <y>141</y>
+        </point>
+      </noteLine>
+    </note>
+    <note color="-2079" content="CI : The moduli of the 2 matrices being operated must be equal">
+      <noteGeometry>
+        <x>110</x>
+        <y>220</y>
+        <w>100</w>
+        <h>90</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="5998">
+        <point>
+          <x>211</x>
+          <y>261</y>
+        </point>
+        <point>
+          <x>261</x>
+          <y>261</y>
+        </point>
+      </noteLine>
+    </note>
+    <note color="-2079" content="CI : Both of the dimensions of a matrix must be above 0">
+      <noteGeometry>
+        <x>640</x>
+        <y>70</y>
+        <w>100</w>
+        <h>75</h>
+      </noteGeometry>
+      <noteLine color="-12566464" relationId="5998">
+        <point>
+          <x>641</x>
+          <y>101</y>
+        </point>
+        <point>
+          <x>551</x>
+          <y>101</y>
+        </point>
+      </noteLine>
+    </note>
+  </umlView>
+</classDiagram>
