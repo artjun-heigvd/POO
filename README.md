@@ -1,6 +1,6 @@
 # POO
 *Programmation orientée objet*
-## [lab01 UML](https://github.com/artjun-heigvd/POO/tree/main/lab01_UML)
+## [Lab01 UML](https://github.com/artjun-heigvd/POO/tree/main/lab01_UML)
 > Non noté
 ## [Lab02 modélisation](https://github.com/artjun-heigvd/POO/tree/main/lab02_Modelisation)
 > 4.4
